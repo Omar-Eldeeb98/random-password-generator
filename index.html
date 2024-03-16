@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Passowrd Generator</title>
+    <!--website logo-->
+    <link
+      rel="shortcut icon"
+      href="./assets/images/logo.png"
+      type="image/x-icon" />
+    <!--bootstrap css link-->
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <!--fontawesome lib-->
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <!--main style sheet-->
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="bg-dark">
+      <div class="container d-flex align-items-center justify-content-center">
+        <div class="row w-100 py-4">
+          <div class="col-md-8 col-lg-5 mx-auto">
+            <div class="_container bg-white rounded shadow-lg">
+              <div
+                class="container__ d-flex align-items-center justify-content-center gap-2 pt-3 rounded-top">
+                <div class="logo-container">
+                  <img src="./assets/images/logo.png" alt="app-logo" class="" />
+                </div>
+                <h2 class="title_ text-uppercase fw-bold text-center">
+                  password generator
+                </h2>
+              </div>
+              <hr />
+              <div class="wrapper">
+                <div class="input-box">
+                  <input
+                    type="text"
+                    value=""
+                    disabled
+                    class="rounded"
+                    placeholder="Password will be here" />
+                  <div class="icon-container">
+                    <i class="copy fa-regular fa-copy"></i>
+                    <i class="check d-none fa-solid fa-check"></i>
+                  </div>
+                </div>
+
+                <div class="pass-indicator"></div>
+
+                <div
+                  class="pass-length bg-dark rounded px-2 text-white-50 py-1">
+                  <div class="details">
+                    <label class="title">password length</label>
+                    <span>15</span>
+                  </div>
+                  <input type="range" min="1" max="30" value="15" step="1" />
+                </div>
+
+                <div
+                  class="pass-settings shadow p-2 rounded bg-dark text-white-50 text-capitalize">
+                  <label class="title text-uppercase"
+                    >password settings :
+                  </label>
+                  <ul class="options">
+                    <li class="option">
+                      <input type="checkbox" id="lowercase" checked />
+                      <label for="lowercase" class="text-lowercase"
+                        >lowercase (a-z)</label
+                      >
+                    </li>
+
+                    <li class="option">
+                      <input type="checkbox" id="uppercase" />
+                      <label for="uppercase">uppercase (A-Z)</label>
+                    </li>
+
+                    <li class="option">
+                      <input type="checkbox" id="numbers" />
+                      <label for="numbers">numbers (0-9)</label>
+                    </li>
+                    <li class="option">
+                      <input type="checkbox" id="symbols" />
+                      <label for="symbols">symbols (!$*%)</label>
+                    </li>
+                    <li class="option">
+                      <input type="checkbox" id="exc-dublicate" />
+                      <label for="exc-dublicate">exclude dublicate </label>
+                    </li>
+                    <li class="option">
+                      <input type="checkbox" id="spaces" />
+                      <label for="spaces">include spaces</label>
+                    </li>
+                  </ul>
+                </div>
+                <div class="text-center py-3">
+                  <button class="btn btn-primary text-uppercase w-100 p-2">
+                    generate password
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- bootstrtap js-->
+    <script src="./javascript/bootstrap.bundle.min.js"></script>
+    <!--main js file-->
+    <script src="./javascript/main.js"></script>
+  </body>
+</html>
